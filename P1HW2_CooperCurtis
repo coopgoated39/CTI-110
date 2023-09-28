@@ -1,0 +1,4 @@
+Print('This program calculates and displays travel expenses')
+Initial Budget =  int(input('Enter Budget:\n'))
+Location = varchar(input('Enter your travel destination:\n'))
+Fuel = int(input('How much do you think you will spend on Gas?')
