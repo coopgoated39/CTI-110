@@ -2,7 +2,21 @@
 #28 Sept 2023
 #CTI-110 P1HW2 - Travel Expense
 #Curtis Cooper
-
+"""
+GET budget
+GET location
+GET fuel
+GET accomondation
+GET food
+CALCLATE expense
+CALCULATE balance
+SHOW header
+SHOW location
+SHOW fuel
+SHOW accomondation 
+SHOW food 
+SHOW balance
+"""
 print('This program calculates and displays travel expenses')
 #Ask user to enter their budget
 Budget =  int(input('Enter Budget: '))
