@@ -1,12 +1,31 @@
-Print('This program calculates and displays travel expenses')
-Initial Budget =  int(input('Enter Budget:\n'))
-Location = varchar(input('Enter your travel destination:\n'))
-Fuel = int(input('How much do you think you will spend on Gas?'))
-accomondation = int(input('Approximately how much do you think you will need for accomodation/hotel:/n'))
-food = int(input('Last how much do you need for food?))
-print(------------------Travel Expenses----------------------------)  
-print('Location:',Location
-print('Initial Budget:',Initial Budget)
+# Expense Calculator
+#28 Sept 2023
+#CTI-110 P1HW2 - Travel Expense
+#Curtis Cooper
+
+print('This program calculates and displays travel expenses')
+#Ask user to enter their budget
+Budget =  int(input('Enter Budget: '))
+#Ask user to enter travel destination
+Location = input('Enter your travel destination: ')
+#Ask user for amount they will spend on gas
+Fuel = int(input('How much do you think you will spend on Gas? '))
+# Ask user for amount they will spend on accommodation
+Accomondation = int(input('Approximately how much do you think you will need for accomodation/hotel:  '))
+# Ask user for amount they will spend on food
+Food = int(input('Last how much do you need for food? '))
+#Add expenses
+Expense = (Fuel+Accomondation+Food)
+#Subtract expenses from budget
+Balance = (Budget-Expense)
+#Display results
+
+print('------------------Travel Expenses----------------------------')  
+print('Location:',Location)
+print('Initial Budget:',Budget, '\n')
 
 print('Fuel:',Fuel)
-print('Accomondation:',accomondation)
+print('Accomondation:',Accomondation)
+print('Food:',Food, '\n')
+
+print('Remaining Balance:',Balance)
