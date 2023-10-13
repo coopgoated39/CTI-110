@@ -1,0 +1,48 @@
+#CTI-110
+#P2HW2 - List
+#Curtis Cooper
+#13 OCT 2023 
+#
+"""
+GET grade for Module 1
+GET grade for Module 2
+GET grade for Module 3
+GET grade for Module 4
+GET grade for Module 5
+GET grade for Module 6
+CALCULATE lowest grade from list
+CALCULATE highest grade from list
+CALCULATE sum of grade from list
+SHOW lowest grade
+SHOW highest grade 
+SHOW sum of grade 
+SHOW average
+"""
+#Ask user to enter grades for following test
+Module_1 =  float(input('Enter grade for Module 1: '))
+#Ask user to enter grades for following test
+Module_2 = float(input('Enter grade for Module 2: '))
+#Ask user to enter grades for following test
+Module_3 = float(input('Enter grade for Module 3:  '))
+#Ask user to enter grades for following test
+Module_4 = float(input('Enter grade for Module 4:  '))
+#Ask user to enter grades for following test
+Module_5 = float(input('Enter grade for Module 5: '))
+#Ask user to enter grades for following test
+Module_6  = float(input('Enter grade for Module 6: '))
+#Display list of module scores
+Module_scores = [Module_1, Module_2, Module_3, Module_4, Module_5, Module_6]
+#Display lowest grade
+Lowest_grade = min(Module_scores)
+#Display highest grade
+Highest_grade = max(Module_scores)
+#Display sum of gardes
+Sum_grade = sum(Module_scores)
+#Calculate average
+Grade_average = Sum_grade / len(Module_scores)
+#Display results
+print('------------------Results----------------------------')  
+print('Lowest Grade: ',Lowest_grade)
+print('Highest Grade: ', Highest_grade)
+print('Sum of Grade: ', Sum_grade)
+print(f'Average: {Grade_average:.2f}')
