@@ -49,6 +49,13 @@ elif avg >= 80:
     
 elif avg >=- 70:
     grade = 'C'
+    
+elif avg >= 60:
+    grade = 'D'
+    
+elif avg < 60
+    grade = 'F'
+
 #display letter grade
 print(f'{"Grade:"  :25}  {grade}')
 print('------------------------------------------------------')
