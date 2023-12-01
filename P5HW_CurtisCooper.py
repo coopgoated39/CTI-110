@@ -17,15 +17,21 @@ def addition():
     
     b = random.randint (0, 20) 
     
+    count = 0
+    
     right = a + b 
     
     question = print(f"What is {a} + {b} ? ") 
     
     answer = int(input())
     
+    count += 1
+    
     if right == answer:
         
         print ("Congratulations !!! your answer is correct!") 
+        
+        print('Number of guesses: ', count)
         
         menu()
         
@@ -40,6 +46,8 @@ def addition():
             print(f"What is {a} + {b} ? ")
             
             answer = int(input())
+            
+            count += 1
         
         elif right > answer:
             
@@ -51,9 +59,13 @@ def addition():
             
             answer = int(input())
             
+            count += 1
+            
         if right == answer:
             
             print ("Congratulations !!! your answer is correct!")
+            
+            print('Number of guesses: ', count)
             
             menu()
 #define Subtraction funtion        
@@ -61,7 +73,9 @@ def subtraction():
     
     a = random.randint (0, 20) 
     
-    b = random.randint (0, 20) 
+    b = random.randint (0, 20)
+    
+    count = 0
     
     right = a - b
     
@@ -69,9 +83,13 @@ def subtraction():
     
     answer = int(input())
     
+    count += 1
+    
     if right == answer:
         
         print ("Congratulations !!! your answer correct!")
+        
+        print('Number of guesses: ', count)
         
         menu()
         
@@ -86,6 +104,8 @@ def subtraction():
             print(f'What is {a} - {b} ?')
             
             answer = int(input())
+            
+            count += 1
     
         
         elif right > answer:
@@ -98,9 +118,13 @@ def subtraction():
             
             answer = int(input())
             
+            count += 1
+            
         if right == answer:
             
             print ("Congratulations !!! your answer correct!") 
+            
+            print('Number of guesses: ', count)
         
             menu()
 #Define exit funtion            
@@ -127,11 +151,20 @@ def menu():
     
     choice = int(input('Please choose one of the menu options:'))
     
-    if choice == 1: addition()
+    if choice == 1: 
+        addition()
     
-    elif choice == 2: subtraction()
+    elif choice == 2: 
+        subtraction()
     
-    elif choice == 3: exit()
+    elif choice == 3: 
+        exit()
+    
+    elif choice > 3 or choice < 1:
+        
+        print('Error !!!')
+        
+        menu()
     
 #Display Menu         
 print('Welcome to Math quiz')      
@@ -152,11 +185,18 @@ print()
 #get User input
 choice = int(input('Please choose one of the menu options:'))
 #evaluate input    
-if choice == 1: addition() 
+if choice == 1: 
+    addition() 
     
-elif choice == 2: subtraction() 
+elif choice == 2: 
+    subtraction() 
     
-elif choice == 3: exit()
+elif choice == 3: 
+    exit()
+
+elif choice > 3 or choice < 1:
+    print('Error !!!')
+    menu()
     
 if __name__ == '__main__':
     ()
